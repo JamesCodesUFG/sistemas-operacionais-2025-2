@@ -26,7 +26,6 @@ int main(void) {
     char read_msg_b[BUFFER_SIZE];
     char read_msg_c[BUFFER_SIZE];
 
-    // Create pipe
     if(pipe(fd_a) == -1) {
         fprintf(stderr, "Pipe faliled");
         return 1;
@@ -42,7 +41,6 @@ int main(void) {
         return 1;
     }
 
-    // Create child process
     pid = fork();
 
     if(pid < 0) {

@@ -1,18 +1,3 @@
-/*
-  Program: parallelized Fibonacci
-
-  This program implements a Fibonacci summation using threads.
-  
-  # Input:
-  N: Number of steps in the sum (N > 0)
-  
-  # Output:
-  The Fibonacci sum
-  
- # Compile:
- gcc -o <my-program>.out <my-program>.c -lpthread
-*/
-
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
